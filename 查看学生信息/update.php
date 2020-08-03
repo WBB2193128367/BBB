@@ -1,0 +1,27 @@
+<?php
+header('content-type:text/html;charset=utf-8');
+require("./functions1.php");
+$link=lianjie();
+require("./update_html.php");
+if(!empty($_POST)){
+$link=lianjie();
+$xuehao=(integer)($_POST['xuehao']);
+$name=(string)$_POST['name'];
+$sex=(string)($_POST['nan']);
+$banji=(string)$_POST['banji'];
+$zhuanye=(string)$_POST['zhuanye'];
+$gaoshu=(integer)($_POST['gs']);
+$sjjg=(integer)($_POST['sjjg']);
+$czxt=(integer)($_POST['czxt']);
+$sql="update chengji set num=$xuehao,name='$name',sex='$sex',grade='$banji',zhuanye='$zhuanye',gs=$gaoshu,sjjg=$sjjg,czxt=$czxt where num like $b";
+$res=mysqli_query($link,$sql);
+if(!$res){
+exit(mysqli_error($link));
+} 
+else
+{
+echo"<script>alert('修改成功！');
+window.location.replace('../contents2.php');
+</script>";
+}}
+?>

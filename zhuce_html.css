@@ -1,0 +1,5 @@
+body{background-image:url(./3.jpg);background-position:center center;background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-color:#CCCCCC;}
+td,input{font-family: "隶书", "宋体"; color:#000000;font-size:15pt;}
+	a{font-family: "隶书", "宋体"; color:bule;font-size:15pt;}
+p{font-family: "隶书", "宋体"; color:#000000;font-size:22pt;}
+table{position:absolute;top:190pt;left:500pt;}

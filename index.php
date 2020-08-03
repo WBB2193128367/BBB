@@ -1,0 +1,30 @@
+<?php //if (!define('APP')) die('error!'); ?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel=stylesheet type="text/css" href="index.css" >
+</head>
+<body > 
+<div>
+<table align=center  background="./time.jpg" cellspacing="0" border="0" width="550px" height="300px">
+<form action="./denglu.php" method="post">
+<tr valign=baseline><td align=center colspan="2"  valign=bottom><p>学生信息管理系统</p></td></tr>
+<tr><td align=right style="width:155px">用户名:</td><td align=left><input type="text" name="user" ></td></tr>
+<tr><td align=right>密码：</td><td align=left><input type="password" name="password" ></td></tr>
+<tr><td align=right>验证码:</td><td align=left><input type="text" name="yanzhengma" >
+<img id="verImg" src="./验证码/yanzhengma.php" />
+<a href="#" class="change" onclick="changeVer()">点击刷新</a></th></tr>
+ <tr><script type="text/javascript">
+ //刷新验证码
+ function changeVer(){
+  document.getElementById("verImg").src="./验证码/yanzhengma.php?tmp="+Math.random();
+ }
+ </script></tr>
+<tr><th align=center colspan="2"><input type="submit" value="登录">&nbsp;&nbsp;<input type="reset" value="重置"></th></tr>
+</form>
+<tr align=center><th colspan="2" ><a href="./zhuce_html.php">注册</a></th></tr>
+</table>
+</div>
+</body>
+</html>

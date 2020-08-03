@@ -1,0 +1,23 @@
+<?php
+header('content-type:text/html;charset=utf-8');
+require("./functions1.php");
+$link=lianjie();
+$xuehao=(integer)($_POST['xuehao']);
+$name=(string)$_POST['name'];
+$sex=(string)($_POST['nan']);
+$banji=(string)$_POST['banji'];
+$zhuanye=(string)$_POST['zhuanye'];
+$gaoshu=(integer)($_POST['gs']);
+$sjjg=(integer)($_POST['sjjg']);
+$czxt=(integer)($_POST['czxt']);
+$sql="insert into chengji  values ($xuehao,'$name','$sex','$banji','$zhuanye',$gaoshu,$sjjg,$czxt)";
+$res=mysqli_query($link,$sql);
+if(!$res){
+exit(mysqli_error($link));
+} 
+else{
+	echo"<script>alert('插入成功！');
+	window.history.back();
+</script>";
+}
+?>

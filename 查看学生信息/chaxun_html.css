@@ -1,0 +1,8 @@
+body{background-image:url(../3.jpg);background-position:center center;background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-color:#CCCCCC;}
+form{position:absolute;top:35pt;left:800pt;}
+table{position:absolute;top:108pt;left:200pt;}
+	p{position:absolute;top:50pt;left:550pt;}
+	div.n{position:absolute;top:285pt;left:500pt;}
+	div.n,p{font-family: "隶书", "宋体"; color:#000000;font-size:25pt;}
+table{font-family: "隶书", "宋体"; color:#000000;font-size:20pt;}
+input{font-family: "隶书", "宋体"; color:#000000;font-size:15pt;}
